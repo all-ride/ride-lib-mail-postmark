@@ -139,10 +139,10 @@ class PostmarkTransport extends AbstractTransport {
                         $html .= '<li>' . $recipient . '</li>';
                     }
                     foreach ($cc as $recipient) {
-                        $html .= '<li>' . $recipient['email'] .  ' (CC)</li>';
+                        $html .= '<li>' . $recipient .  ' (CC)</li>';
                     }
                     foreach ($bcc as $recipient) {
-                        $html .= '<li>' . $recipient['email'] .  ' (BCC)</li>';
+                        $html .= '<li>' . $recipient .  ' (BCC)</li>';
                     }
                     $html .= '</div>';
 
