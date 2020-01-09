@@ -104,7 +104,7 @@ class PostmarkTransport extends AbstractTransport {
                     continue;
                 }
 
-                $struct['attachments'][] = PostmarkAttachment::fromRawData($part->getBody(), $name, $part->getMimeType());
+                $struct['attachments'][] = PostmarkAttachment::fromBase64EncodedData($part->getBody(), $name, $part->getMimeType());
             }
 
             // handle debug mode
