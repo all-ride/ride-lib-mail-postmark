@@ -263,7 +263,7 @@ class PostmarkTransport extends AbstractTransport {
             return null;
         }
 
-        return $address->getEmailAddress();
+        return (string) $address;
     }
 
 }
