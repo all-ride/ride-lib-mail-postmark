@@ -15,7 +15,7 @@
     "require": {
         "ride/lib-log": "^1.0.0",
         "ride/lib-mail": "^1.0.0",
-        "wildbit/postmark-php": "^2.8.0"
+        "wildbit/postmark-php": "^4.0.0"
     },
     "autoload": {
         "psr-0": {
