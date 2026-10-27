@@ -200,19 +200,6 @@ class PostmarkTransport extends AbstractTransport {
                 }
             }
 
-            // log the mail
-            if (isset($struct['text'])) {
-                unset($struct['text']);
-            }
-            if (isset($struct['body'])) {
-                unset($struct['body']);
-            }
-            if (isset($struct['attachments'])) {
-                unset($struct['attachments']);
-            }
-
-            $this->logMail($struct['subject'], var_export($struct, true), count($this->errors));
-
             if (count($this->errors)) {
                 throw new MailException('Errors returned from the server: ' . $errorDescription);
             }
